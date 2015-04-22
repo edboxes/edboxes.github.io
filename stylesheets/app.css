@@ -9265,66 +9265,67 @@ nav h1 #BOXES {
   /* line 3, ../scss/_footer.scss */
   footer.row {
     margin-top: 0;
+    padding-bottom: 3em;
   }
-  /* line 6, ../scss/_footer.scss */
+  /* line 7, ../scss/_footer.scss */
   footer.row .textwidget {
     font-size: 80%;
   }
 }
 @media only screen {
-  /* line 13, ../scss/_footer.scss */
+  /* line 14, ../scss/_footer.scss */
   section.mailing_list {
     margin-top: 4em;
     padding-bottom: 0;
   }
-  /* line 17, ../scss/_footer.scss */
+  /* line 18, ../scss/_footer.scss */
   section.mailing_list p {
     margin-bottom: 0;
   }
-  /* line 21, ../scss/_footer.scss */
+  /* line 22, ../scss/_footer.scss */
   section.mailing_list .email_form {
     margin-top: 1em !important;
     padding-bottom: 0;
   }
-  /* line 26, ../scss/_footer.scss */
+  /* line 27, ../scss/_footer.scss */
   section.mailing_list input, section.mailing_list a {
     margin-bottom: 0 !important;
   }
 
-  /* line 31, ../scss/_footer.scss */
+  /* line 32, ../scss/_footer.scss */
   footer {
     color: #666666;
   }
-  /* line 34, ../scss/_footer.scss */
+  /* line 35, ../scss/_footer.scss */
   footer .textwidget {
     font-style: italic;
     text-align: center;
   }
-  /* line 38, ../scss/_footer.scss */
+  /* line 39, ../scss/_footer.scss */
   footer .textwidget a {
     color: #666666;
     font-weight: bold;
   }
-  /* line 44, ../scss/_footer.scss */
+  /* line 45, ../scss/_footer.scss */
   footer #nav_menu-2 {
     display: none;
   }
-  /* line 47, ../scss/_footer.scss */
+  /* line 48, ../scss/_footer.scss */
   footer #nav_menu-2 ul {
     list-style: none;
   }
-  /* line 50, ../scss/_footer.scss */
+  /* line 51, ../scss/_footer.scss */
   footer #nav_menu-2 ul a {
     color: #666666;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 60, ../scss/_footer.scss */
+  /* line 61, ../scss/_footer.scss */
   section.mailing_list .email_form {
     margin-top: 1.5em !important;
   }
 
-  /* line 66, ../scss/_footer.scss */
+  /* line 67, ../scss/_footer.scss */
   footer .textwidget {
     text-align: left;
   }
