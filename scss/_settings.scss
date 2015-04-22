@@ -1465,3 +1465,18 @@ $include-html-global-classes: $include-html-classes;
 // $include-accessibility-classes: true;
 // $include-table-visibility-classes: true;
 // $include-legacy-visibility-classes: true;
+
+
+$font-family-sans-serif: Oxygen, 'Helvetica Neue', Helvetica, Calibri, Arial, sans-serif;
+$font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
+
+// We use these to define default font weights
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
+
+$edboxes-purple: #BC88FC;
+$edboxes-red: #FF7070;
+
+$primary-color: $edboxes-purple;
+$secondary-color: $edboxes-red;

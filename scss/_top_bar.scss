@@ -1,0 +1,44 @@
+.top-bar-container, .tab-bar {
+  margin-bottom: rem-calc(32);
+}
+
+nav {
+  text-rendering: auto;
+  -webkit-font-smoothing: subpixel-antialiased;
+  
+  h1 {
+
+    #ED {
+      color: $edboxes-red;
+    }
+    #BOXES {
+      color: $edboxes-purple;
+    }
+  }
+}
+
+.top-bar .name {
+  h1 {
+    a { 
+      font-weight: 500;
+    }
+  }
+}
+
+.tab-bar {
+  section.left-small {
+    a {
+      margin-left: -0.62em;
+      margin-top: -0.1em;
+      font-size: 200%;
+    }
+  }
+}
+
+// A more subtle background color for the active menu item
+.top-bar-section li.active:not(.has-form) a:not(.button)  {
+  background: #272727;
+}
+.top-bar-section li.active:not(.has-form) a:hover:not(.button) {
+  background: #202020;
+}

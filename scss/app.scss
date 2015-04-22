@@ -1,40 +1,114 @@
 @import "settings";
 @import "foundation";
 
-// Or selectively include components
-// @import
-//   "foundation/components/accordion",
-//   "foundation/components/alert-boxes",
-//   "foundation/components/block-grid",
-//   "foundation/components/breadcrumbs",
-//   "foundation/components/button-groups",
-//   "foundation/components/buttons",
-//   "foundation/components/clearing",
-//   "foundation/components/dropdown",
-//   "foundation/components/dropdown-buttons",
-//   "foundation/components/flex-video",
-//   "foundation/components/forms",
-//   "foundation/components/grid",
-//   "foundation/components/inline-lists",
-//   "foundation/components/joyride",
-//   "foundation/components/keystrokes",
-//   "foundation/components/labels",
-//   "foundation/components/magellan",
-//   "foundation/components/orbit",
-//   "foundation/components/pagination",
-//   "foundation/components/panels",
-//   "foundation/components/pricing-tables",
-//   "foundation/components/progress-bars",
-//   "foundation/components/reveal",
-//   "foundation/components/side-nav",
-//   "foundation/components/split-buttons",
-//   "foundation/components/sub-nav",
-//   "foundation/components/switches",
-//   "foundation/components/tables",
-//   "foundation/components/tabs",
-//   "foundation/components/thumbs",
-//   "foundation/components/tooltips",
-//   "foundation/components/top-bar",
-//   "foundation/components/type",
-//   "foundation/components/offcanvas",
-//   "foundation/components/visibility";
+@import "global";
+@import "top_bar";
+@import "footer";
+
+
+
+
+@media #{$small-up} {
+
+  .bg_gradient {
+    background: rgb(188,136,252);
+    background: -moz-linear-gradient(-45deg, rgba(188,136,252,1) 0%, rgba(255,112,112,1) 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(188,136,252,1)), color-stop(100%,rgba(255,112,112,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(188,136,252,1) 0%,rgba(255,112,112,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(188,136,252,1) 0%,rgba(255,112,112,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(188,136,252,1) 0%,rgba(255,112,112,1) 100%);
+    background: linear-gradient(135deg, rgba(188,136,252,1) 0%,rgba(255,112,112,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc88fc', endColorstr='#ff7070',GradientType=1 );
+  }
+
+  section#SPLASH {
+    @extend .bg_gradient;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+
+    text-align: center;
+    
+    h1 {
+      color: white;
+    }
+
+    p {
+      font-size: 125%;
+
+      color: white;
+      line-height: 1.35em;
+    }
+
+    .more-button {
+      @include button($button-med, $white, $global-radius, false, false, false);
+
+      color: $edboxes-purple;
+      font-weight: bold;
+    }
+  }
+
+  section#POINTS {
+    h2 {
+      text-align: center;
+    }
+  }
+
+
+  .project {
+    a {
+      color: black;
+    }
+
+    .inset {
+      @include panel(
+        $bg: scale-color(#999999, $lightness: 95%)
+      );
+    }
+
+    .inset:hover {
+      @include panel(
+        $bg: scale-color($edboxes-red, $lightness: 95%)
+      );
+    }
+  }
+}
+@media #{$small-only} {
+  section#SPLASH h1 {
+    font-size: 200%;
+
+    a {
+      font-size: 100%;
+    }
+  }
+}
+
+@media #{$medium-up} {
+  section#SPLASH h1 {
+    font-size: 200%;
+  }
+
+  section#SPLASH p {
+    margin-top: 1em;
+  }
+}
+@media #{$medium-only} { }
+
+@media #{$large-up} {
+  section#SPLASH h1 {
+    margin-top: 1.25em;
+    font-size: 250%;
+  }
+
+  
+}
+@media #{$large-only} { }
+
+@media #{$xlarge-up} {
+
+}
+@media #{$xlarge-only} { }
+
+@media #{$xxlarge-up} { }
+@media #{$xxlarge-only} { }

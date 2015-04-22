@@ -1,0 +1,70 @@
+// Add some whitespace above the footer for medium-up screens
+@media #{$medium-up} {
+  footer.row {
+    margin-top: 0;
+
+    .textwidget {
+      font-size: 80%;
+    }
+  }
+}
+
+@media #{$small-up} {
+  section.mailing_list {
+    margin-top: 4em;
+    padding-bottom: 0;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .email_form {
+      margin-top: 1em !important;
+      padding-bottom: 0;
+    }
+
+    input, a {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  footer {
+    color: #666666;
+    
+    .textwidget {
+      font-style: italic;
+      text-align: center;
+
+      a {
+        color: #666666;
+        font-weight: bold;
+      }
+    }
+
+    #nav_menu-2 {
+      display: none;
+
+      ul {
+        list-style: none;
+
+        a {
+          color: #666666;
+        }
+      }
+    }
+  }
+}
+
+@media #{$large-up} {
+  section.mailing_list {
+    .email_form {
+      margin-top: 1.5em !important;
+    }
+  }
+
+  footer {
+    .textwidget {
+      text-align: left;
+    }
+  }
+}
