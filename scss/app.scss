@@ -93,7 +93,11 @@
     margin-top: 1em;
   }
 }
-@media #{$medium-only} { }
+@media #{$medium-only} {
+  .inset {
+    min-height: 175px;
+  }
+}
 
 @media #{$large-up} {
   section#SPLASH h1 {
@@ -101,6 +105,9 @@
     font-size: 250%;
   }
 
+  .inset {
+    min-height: 200px;
+  }
   
 }
 @media #{$large-only} { }

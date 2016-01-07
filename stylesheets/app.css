@@ -9491,10 +9491,21 @@ nav h1 #BOXES {
     margin-top: 1em;
   }
 }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* line 97, ../scss/app.scss */
+  .inset {
+    min-height: 175px;
+  }
+}
 @media only screen and (min-width: 64.063em) {
-  /* line 99, ../scss/app.scss */
+  /* line 103, ../scss/app.scss */
   section#SPLASH h1 {
     margin-top: 1.25em;
     font-size: 250%;
+  }
+
+  /* line 108, ../scss/app.scss */
+  .inset {
+    min-height: 200px;
   }
 }
